@@ -1,5 +1,4 @@
 
-
 /* =========== VARIABLES =========== */
 @import url(./variable.css);
 
@@ -38,11 +37,11 @@ html {
 
 ::-webkit-scrollbar { width: 5px; }
 
-::-webkit-scrollbar-track { background: var(--light-gray);}
+::-webkit-scrollbar-track { background: rgb(48, 48, 48);}
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: var(--red-orange-color-wheel);
+    background:  VARIABLES ;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -55,9 +54,9 @@ html {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: var(--fs-6);
-    font-weight: var(--fw-5);
+    font-weight: bold;
     border-radius: 8px;
-    color: var(--white);
+    color: white;
     padding: 20px 45px;
     text-transform: uppercase;
     overflow: hidden;
@@ -69,17 +68,31 @@ html {
 }
 
 .btn-primary,
-.btn-secondary .square { background: var(--red-orange-color-wheel); } 
+.btn-secondary .square { 
+    background: rgb(116, 115, 115);
+ } 
 
 .btn .square {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    width: 40px;
+    width: 5px;
     height: 40px;
     border-radius: 8px;
     transition: var(--default-transition);
+}
+:root{
+    --red-orange-color-wheel: #ff4a03;
+    --red-neon-color-wheel: #9e9696;
+    --ultramarine-blue: #0062ff;
+    --lavender-blue: #d2dafe;
+    --oxford-blue: #050e38;
+    --light-gray: #cccccc;
+    --sonic-silver: #181717;
+    --blue-crayola: #0d6dfd;
+    --cultured: #d2d4dc;
+    --white: #525252;
 }
 
 .btn:hover .square {
@@ -90,19 +103,19 @@ html {
 
 .btn-primary .square,
 .btn-secondary {
-    background: var(--oxford-blue);
+    background: #fc4626;
 }
 
 /* =========== REUSED CSS =========== */
 
 .section-subtitle {
-    color: var(--ultramarine-blue);
+    color: #fc4626;;
     font-weight: var(--fw-7);
     text-transform: uppercase;
 }
 
 .section-text {
-    color: var(--sonic-silver);
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: var(--fs-6);
     line-height: 1.6;
@@ -111,7 +124,7 @@ html {
 .section-title {
     font-size: var(--fs-2);
     font-weight: var(--fw-8);
-    color: var(--oxford-blue);
+    color: whitesmoke;
     line-height: 1.3;
 }
 
@@ -123,6 +136,11 @@ html {
     margin: auto;
     overflow: hidden;
 }
+.navbar-brand img {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 .navbar {
     position: fixed;
@@ -131,7 +149,7 @@ html {
     transform: translateX(-50%);
     width: 100%;
     max-width: 1440px;
-    background: hsla(0, 0%, 100%, 0.9);
+    background: #222;
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
@@ -160,9 +178,15 @@ html {
     padding: 10px;
     font-size: var(--fs-5);
     font-weight: var(--fw-6);
-    color: var(--oxford-blue);
+    color: white;
     transition: var(--default-transition);
 }
+
+.nav-item a:hover {
+    color: #fc4626;
+}
+
+
 
 .nav-item:not(:last-child) a {
     border-bottom: 1px solid hsla(0, 0%, 8%, 0.1);
@@ -198,7 +222,7 @@ html {
 }
 
 .nav-toggle-btn {
-    background: var(--red-orange-color-wheel);
+    background: var(--bright-red);
     width: 50px;
     height: 50px;
     border-radius: 8px;
@@ -244,8 +268,8 @@ html {
     left: -400px;
     width:  800px;
     height: 800px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse at center, hsla(217, 100%, 50%, 0.3), transparent 70%);
+    border-radius: 70%;
+    background: radial-gradient(ellipse at center, #222, transparent 70%);
   }
   
   .home::after {
@@ -256,7 +280,7 @@ html {
     width:  800px;
     height: 800px;
     border-radius: 50%;
-    background: radial-gradient(ellipse at center, hsla(15, 100%, 55%, 0.3), transparent 70%);
+    background: radial-gradient( #222, transparent 70%);
   }
 
 .home .deco-shape {
@@ -298,7 +322,7 @@ html {
 }
 
 .main-heading {
-    color: var(--oxford-blue);
+    color: #fffdfd;
     font-size: var(--fs-1);
     font-weight: var(--fw-9);
     line-height: 1.2;
@@ -335,48 +359,131 @@ html {
 
 .home-right .img-box {
     position: relative;
-}
-
-.home-right .img-box img {
-    position: absolute;
+    width: 100%; /* Ensure the container takes full width */
 }
 
 .home-right .img-box .banner-img {
-    position: relative;
-    width: auto;
-    max-width: 100%;
-
-    margin: auto;
+    position: absolute; 
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(20px);
+    width: 70%; 
+    max-width: none; 
+    height: auto;
+    z-index: 10; /* Ensure the image is on top */
 }
+/* Changes Made */
+@media screen and (max-width: 993px) { /* Adjust the max-width as per your requirement */
+    .home-right .img-box .banner-img {
+        display: none;
+    }
+}
+
 
 .home-right .background-shape {
     width: auto;
     max-width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    /* z-index: 1; */
-}
-
-.home-right .icon-1 {
-    top: 200px;
-    left: 20px;
-}
-
-.home-right .icon-2,
-.home-right .icon-3 {
-    display: none;
 }
 
 .home-right .icon-4 {
+    position: absolute; /* Ensure correct positioning */
     top: 60px;
-    right: 20px;
+    right: 10px;
     filter: drop-shadow(0 8px 30px hsla(350, 100%, 68%, 0.5));
 }
 
-.icon-1, .icon-2, .icon-3, .icon-4 {
+.icon-4 {
     filter: drop-shadow(0 10px 20px hsla(0, 0%, 0%, 0.2));
     z-index: 5;
 }
+/* Styling for the Memories Title */
+.memories-title {
+    text-align: center;
+    font-size: 2.5em; /* Increase size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between title and images */
+    color:#ff4a03; /* Customize the color if needed */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slideshow-wrapper {
+    position: relative;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Images within the slideshow */
+.mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: add rounded corners to the images */
+}
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.slideshow-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 
 /* =========== COURSE CATEGORY =========== */
 .category {
@@ -660,7 +767,7 @@ html {
 
 .course-card .rating ion-icon {
     font-size: 20px;
-    color: hsl(45, 100%, 51%);
+    color: hsl(18, 100%, 51%);
 }
 
 .course-card .enrolled p,
@@ -969,7 +1076,7 @@ html {
 }
 
 .instructor-card .social-link a {
-    background: var(--ultramarine-blue);
+    background: #ff4a03;
     color: var(--white);
     width: 35px;
     height: 35px;
@@ -1227,9 +1334,8 @@ testimonials-right {
 /* =========== FOOTER =========== */
 
 footer {
-    background: var(--oxford-blue);
+    background: hsla(0, 2%, 34%, 0.9);
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -1239,6 +1345,28 @@ footer {
 
 .footer-logo {
     margin-bottom: 25px;
+    width: 150px; /* Default width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 120px; /* Adjusted width for tablets and smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        width: 100px; /* Adjusted width for mobile devices */
+    }
+}
+
+/* If you want to ensure the image doesn't overflow */
+.footer-logo img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .footer-text {
@@ -1277,7 +1405,7 @@ footer {
 
 .grid-item .item-heading {
     font-size: var(--fs-4);
-    color: var(--white);
+    color: white;
     margin-bottom: 25px;
 }
 
