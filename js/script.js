@@ -21,6 +21,7 @@ function plusSlides(n) {
 }
 
 
+
 // navbar variables
 const navbarNav = document.querySelector('.navbar-nav');
 const navbarToggleBtn = document.querySelector('.nav-toggle-btn');

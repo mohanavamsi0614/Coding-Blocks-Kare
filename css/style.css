@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+
 li {
     list-style: none;
 }
@@ -49,6 +50,7 @@ html {
 }
 
 /* =========== COMPONENT =========== */
+
 
 .btn {
     position: relative;
@@ -173,6 +175,7 @@ html {
     transform: scale(0.8);
     pointer-events: none;
 }
+
 
 .nav-item a {
     padding: 10px;
