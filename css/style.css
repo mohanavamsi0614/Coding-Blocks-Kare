@@ -134,7 +134,7 @@ html {
 
 .container {
     background: var(--white);
-    max-width: 1440px;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -150,7 +150,6 @@ html {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1440px;
     background: #222;
     backdrop-filter: blur(15px);
     display: flex;
