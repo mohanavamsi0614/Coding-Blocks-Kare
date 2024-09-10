@@ -376,11 +376,19 @@ html {
     z-index: 10; /* Ensure the image is on top */
 }
 /* Changes Made */
-@media screen and (max-width: 993px) { /* Adjust the max-width as per your requirement */
+@media screen and (max-width: 993px) {
     .home-right .img-box .banner-img {
         display: none;
     }
+
+    /* Adjust other elements accordingly */
+    .home-right .other-element {
+        margin: 0; /* Adjust margins */
+        padding: 0; /* Adjust paddings */
+        /* Other adjustments as needed */
+    }
 }
+
 
 
 .home-right .background-shape {
