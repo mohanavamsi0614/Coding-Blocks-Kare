@@ -3,7 +3,7 @@ document.getElementById('event-registration-form').addEventListener('submit', fu
 
     // Collect form data
     const formData = new FormData(this);
-
+    console.log(this.action);
     // Send data to the Google Apps Script via fetch
     fetch(this.action, {
         method: this.method,

@@ -51,6 +51,18 @@
     }
 }
 
+@media (max-width: 575px) {
+    .navbar .btn {
+        display: block;
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    
+}
+
 @media (min-width: 575px) {
     /* =========== VARIABLE =========== */
     :root {
