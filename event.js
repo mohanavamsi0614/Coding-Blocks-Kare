@@ -15,15 +15,25 @@ document.getElementById('event-registration-form').addEventListener('submit', fu
             event: this.event.value,
             registerNumber: this.reg_no.value,
             department: this.department.value,
-            event:this.event.value
         })
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
-        // Show success message
-        console.log(data);
-        document.getElementById('success-message').style.display = 'block';
-        this.reset(); // Optionally reset the form after submission
+        if(data.status === 201){
+            console.log(data);
+            document.getElementById('success-message').innerHTML = data.message;
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('success-message').style.color = 'green';
+
+            this.reset(); 
+        }
+        else{
+            console.log(data);
+            document.getElementById('success-message').innerHTML = data.message;
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('success-message').style.color = 'red';
+
+        }
     })
     .catch(error => {
         console.error('Error:', error);
