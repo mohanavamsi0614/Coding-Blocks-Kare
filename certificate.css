@@ -109,6 +109,15 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+    .loading{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .certificate-popup{
+        width: 90vw;
+    }
     .container {
         padding: 10px;
     }

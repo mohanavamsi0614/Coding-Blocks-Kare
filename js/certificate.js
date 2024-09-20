@@ -3,6 +3,7 @@ document.getElementById('verification-form').addEventListener('submit', async fu
 
   const certID = document.getElementById('certID').value;
 
+  
   document.getElementById('loading').style.display = 'block';
   document.getElementById('error').style.display = 'none';
   document.querySelector(".certificate-popup").style.display = "none";
@@ -42,3 +43,10 @@ document.getElementById('verification-form').addEventListener('submit', async fu
       console.error('Error verifying certificate:', error);
   }
 });
+// document.addEventListener('DOMContentLoaded', function() {
+//   fetch('../navbar.html')
+//       .then(response => response.text())
+//       .then(data => {
+//         console.log(data+"iu")
+//           document.getElementById('navbar-placeholder').innerHTML = data;
+//       })})

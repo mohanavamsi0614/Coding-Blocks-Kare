@@ -72,6 +72,13 @@ html {
 .btn-secondary .square { 
     background: rgb(116, 115, 115);
  } 
+ .btn-primary {
+    padding: 10px 20px;
+    background-color: #fc4626;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .btn .square {
     position: absolute;

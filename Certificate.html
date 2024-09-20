@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="certificate.css">
 </head>
 <body>
+    <div id="navbar-placeholder"></div>
+
     <div class="container">
         <div class="verification-container">
             <h2>Certificate Verification</h2>
@@ -19,7 +21,7 @@
         
     </div>
     
-    <div class="custom-loader" id="loading" style="display: none;"></div>
+    <div class="loading"><div class="custom-loader" id="loading" style="display: none;"></div></div>
     <div id="error" class="error" style="display:none;"><span>&#9888;</span>
         Certificate not found</div>
 
@@ -36,7 +38,11 @@
             </div>
         </div>
     </div>
-
-    <script src="./js/certificate.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+<script src="/js/certificate.js"></script>
 </body>
+
 </html>
