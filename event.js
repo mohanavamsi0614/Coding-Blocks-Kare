@@ -11,7 +11,7 @@ document.getElementById('event-registration-form').addEventListener('submit', fu
         department: this.department.value,
     }
 
-    fetch("https://cb-kare-server.onrender.com/pay/createOrder", {
+    fetch("https://cb-kare-server-za6b.onrender.com/pay/createOrder", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -32,7 +32,7 @@ document.getElementById('event-registration-form').addEventListener('submit', fu
                 description: 'Register for the event',
                 order_id: data.id, 
                 handler: function (response) {
-                    fetch("https://cb-kare-server.onrender.com/pay/verify", {
+                    fetch("https://cb-kare-server-za6b.onrender.com/pay/verify", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"

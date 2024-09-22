@@ -9,7 +9,7 @@ document.getElementById('verification-form').addEventListener('submit', async fu
   document.querySelector(".certificate-popup").style.display = "none";
 
   try {
-      const response = await fetch('https://cb-kare-server.onrender.com/cerficate/verify-certificate', {
+      const response = await fetch('https://cb-kare-server-za6b.onrender.com/cerficate/verify-certificate', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
