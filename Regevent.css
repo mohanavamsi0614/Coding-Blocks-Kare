@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ECE8E7; /* White */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000; /* Black */
+}
+
+.form-section, .qr-section {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 700px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #E16254; /* Red */
+}
+h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #E16254;
+}
+
+legend{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #E16254;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #919294; /* Gray */
+    border-radius: 4px;
+    background-color: #FFFFFF; /* White */
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #E16254; /* Red */
+    outline: none;
+}
+
+input[type="submit"], .submit-btn {
+    background-color: #E16254; /* Red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover, .submit-btn:hover {
+    background-color: #c15248; /* Darker shade of Red for hover */
+}
+
+.guideline {
+    font-size: 12px;
+    color: #919294; /* Gray */
+}

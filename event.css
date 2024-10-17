@@ -1,53 +1,131 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eaeaea; /* Greyish-white */
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #15171f;
+    color: #ECE8E7;
+}
+
+.first, .middle, .last {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    text-align: center;
+    max-width: 600px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+    font-size: 3.5rem;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ECE8E7;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: xx-large;
+    color: #ff6600;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #15171f;
+}
+.first p{
+    color: #ECE8E7;
+}
+
+.date {
+    font-size: 1.5rem;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #ECE8E7;
+    border-radius: 8px;
+    color: #ECE8E7;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #ECE8E7;
+    color: #15171f;
+}
+
+.section {
+    border: 1px solid #ECE8E7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px;
+    background-color: #ECE8E7;
+    color: #1E1E1E;
+}
+
+.content {
+    font-size: 1em;
+}
+
+.middle .title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.Price {
+    color: #1E1E1E;
+    font-weight: 600;
+    font-size: 2em;
+}
+.last .container{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;    
+}
+footer {
+    background-color: #3a3a3a;
+    color: #ECE8E7;
+    padding: 20px 0;
     text-align: center;
-    color: #ff6600; /* Orange */
 }
 
-label {
-    margin-top: 10px;
-    display: block;
-    color: #333; /* Grey */
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #7b7777;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding is included in the total width */
+.footer-container p {
+    margin: 5px 0;
 }
 
-button {
-    background-color: #ff6600; /* Orange */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
+.footer-container a {
+    color: #ff6600;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-button:hover {
-    background-color: #e65c00; /* Darker orange */
+.footer-container a:hover {
+    color: #ECE8E7;
 }

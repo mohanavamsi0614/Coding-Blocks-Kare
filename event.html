@@ -3,47 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Registration Form</title>
+    <title>The Build-a-Bot 24hrs Hackathon</title>
     <link rel="stylesheet" href="event.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Event Registration</h1>
-        <form id="event-registration-form" action="https://cb-kare-server-za6b.onrender.com/event/register" method="post">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="reg_no">Registration No:</label>
-            <input type="text" id="reg_no" name="reg_no" required>
-
-            <label for="department">Department:</label>
-            <input type="text" id="department" name="department" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="Year">Select Year:</label>
-            <select id="Year" name="Year" required>
-                <option value="">--Choose an Year</option>
-                <option value="2 Year">2nd</option>
-                <option value=" 3 Year">3rd</option>
-                <option value=" 4 Year">4th</option>
-            </select>
-
-            <button type="submit" value="submit" name="submit">Register</button>
-        </form>
-
-        <!-- Success message div -->
-        <div id="success-message" style="display:none; color: green; margin-top: 20px;">
-            Successfully registered!
+    <div class="first">
+        <div class="container">
+            <h1 id="head"></h1>
+            <h2>A 24-Hour Hackathon</h2>
+            <p>
+                Join us for a high-energy hackathon where you'll design, develop, and deploy cutting-edge bots in just 24 hours! 
+                Unleash your creativity, showcase your technical prowess, and compete for the top spot.
+            </p>
+            <div class="date">Nov 2-3, 2024</div>
+            <a href="./EventForm.html" class="register-btn">Register Now!</a>
         </div>
     </div>
 
-    <script type="module" src="event.js"></script>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <div class="middle">
+        <div class="container">
+            <h1 class="title">Hackathon Overview</h1>
+
+            <div class="section">
+                <div class="title">Event Details</div>
+                <div class="content">
+                    <p>This intensive, high-energy competition challenges teams of participants to design, develop, and deploy innovative bots within a 24-hour timeframe.</p>
+                    <p>Registration Fee: <strong>₹200 per participant</strong></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">Focus Areas</div>
+                <div class="content">
+                    <p>The hackathon will focus on practical applications, problem-solving, and technological creativity.</p>
+                    <p>Participants are encouraged to use various technologies and frameworks to create functional and creative bots.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <div  class="container">
+            <h1 >Prices</h1>
+
+        <div class="section" >
+            <div class="title">1st Price</div>
+            <p class="Price">
+              RS 5000
+            </p>
+            </div>
+            <div class="section">
+                <div class="title">2nd Price</div>
+                <p class="Price">
+                   RS 4000
+
+                </p>
+                </div>
+                <div class="section">
+                    <div class="title">3rd Price</div>
+                    <p class="Price">
+                      RS 3000
+                    </p>
+                    </div>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Build-a-Bot Hackathon. All Rights Reserved.</p>
+            <p>Contact us: <a href="mailto:info@buildabot.com">info@buildabot.com</a></p>
+            <div class="socials">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    
 
 </body>
+<script src="./event.js"></script>
 </html>
